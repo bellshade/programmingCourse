@@ -11,6 +11,6 @@ Computer programming is the process of designing and building an executable comp
 
 ## list porgramming language
 
-- [Assembly](./assembly.md)
-- [C](./C.md)
-- [C++](./cppList.md)
+[![assembly](https://img.shields.io/badge/Assembly-0097e6?style=for-the-badge&logo=assembly&logoColor=white)](./assembly.md)
+[![C](https://img.shields.io/badge/C_programming-e1b12c?style=for-the-badge&logo=C&logoColor=white)](./C.md)
+[![C++](https://img.shields.io/badge/C++_programming-8c7ae6?style=for-the-badge&logo=C%2B%2B&logoColor=white)](./cppList.md)
