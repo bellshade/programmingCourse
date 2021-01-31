@@ -4,4 +4,5 @@ Computer programming is the process of designing and building an executable comp
 
 ## list porgramming language
 
+- [assembly](./assembly.md)
 - [cpp](./cppList.md)
