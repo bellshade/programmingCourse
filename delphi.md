@@ -11,3 +11,9 @@
 - [OpenGL with delphi](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi/Delphi%20-%20OpenGL%20with%20Delphi.pdf)
 - [Pointers in delphi](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi/Delphi%20-%20Pointers%20in%20Delphi.pdf)
 - [thread MIT delphi](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi/Delphi%20-%20Threads%20mit%20Delphi.pdf)
+- [make text editor with delphi](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi/Delphi%20-%20Tutorial%20-%20Creating%20a%20Text%20Editor%20using%20Delphi.pdf)
+
+## deplhi 5
+
+- [Mastering delphi 5 chapter 22: grapich in delphi](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi%205/Delphi%205%20-%20Mastering%20Delphi%205%20-%20Chapter%2022%20-%20Graphics.pdf)
+- [Object pascal guide](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi%205/Delphi%205%20-%20Object%20Pascal%20Language%20Guide.pdf)
