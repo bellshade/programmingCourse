@@ -16,3 +16,132 @@
 - [Windows assembly language](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Assembly/Windows%20Assembly%20Language%20%26%20Systems%20Programming-%2016%20And%2032%20Bit%20Low-Level%20Programming%20for%20the%20PC%20and%20Windows%201997%20-%20Barry%20Kauler.pdf)
 - [Windows assembly language and system programming](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Assembly/Windows%20assembly%20language%20and%20systems%20programming%201997.pdf)
 - [Write great code understanding the machine](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Assembly/Write%20Great%20Code%20Understanding%20the%20Machine%2C%20Volume%20I.chm)
+
+## hello world!
+**assembler mips**
+```asm
+.data
+    hw:        .asciiz        "Hello, World!"
+.text
+main:
+    la $a0, hw           #load the address of hw into $a0
+    li $v0, 4            #load 4 into $v0
+    syscall              #perform the print_string syscall
+    li $v0, 10           #load 10 into $v0
+    syscall              #perform the exit syscall
+```
+
+**assembler masm win64**
+```asm
+GetStdHandle PROTO
+ExitProcess PROTO
+WriteConsoleA PROTO
+
+.data
+msg BYTE "Hello World!",0
+bytesWritten DWORD ?
+
+.code
+main PROC
+    sub rsp, 5 * 8              ; reserve shadow space
+
+    mov rcx, -11                ; nStdHandle (STD_OUTPUT_HANDLE)
+    call GetStdHandle
+
+    mov  rcx, rax               ; hConsoleOutput
+    lea  rdx, msg               ; *lpBuffer
+    mov  r8, LENGTHOF msg - 1   ; nNumberOfCharsToWrite
+    lea  r9, bytesWritten       ; lpNumberOfCharsWritten
+    mov  QWORD PTR [rsp + 4 * SIZEOF QWORD], 0  ; lpReserved
+    call WriteConsoleA
+
+    mov rcx, 0                  ; uExitCode
+    call ExitProcess
+main ENDP
+END
+```
+
+**assembler masm win32**
+```asm
+.386
+.model flat,stdcall
+.stack 4096
+
+EXTRN ExitProcess@4 : PROC
+EXTRN GetStdHandle@4 : PROC
+EXTRN WriteConsoleA@20 : PROC
+
+.data
+msg BYTE "Hello World!",0
+bytesWritten DWORD ?
+
+.code
+main PROC
+    push -11                 ; nStdHandle (STD_OUTPUT_HANDLE)
+    call GetStdHandle@4
+ 
+    push 0                   ; lpReserved
+    push OFFSET bytesWritten ; lpNumberOfCharsWritten
+    push LENGTHOF msg - 1    ; nNumberOfCharsToWrite
+    push OFFSET msg          ; *lpBuffer
+    push eax                 ; hConsoleOutput
+    call WriteConsoleA@20
+
+    push 0                   ; uExitCode
+    call ExitProcess@4
+main ENDP
+END main
+```
+
+**assembler nasm linux**
+```asm
+.386
+.model flat,stdcall
+.stack 4096
+
+EXTRN ExitProcess@4 : PROC
+EXTRN GetStdHandle@4 : PROC
+EXTRN WriteConsoleA@20 : PROC
+
+.data
+msg BYTE "Hello World!",0
+bytesWritten DWORD ?
+
+.code
+main PROC
+    push -11                 ; nStdHandle (STD_OUTPUT_HANDLE)
+    call GetStdHandle@4
+ 
+    push 0                   ; lpReserved
+    push OFFSET bytesWritten ; lpNumberOfCharsWritten
+    push LENGTHOF msg - 1    ; nNumberOfCharsToWrite
+    push OFFSET msg          ; *lpBuffer
+    push eax                 ; hConsoleOutput
+    call WriteConsoleA@20
+
+    push 0                   ; uExitCode
+    call ExitProcess@4
+main ENDP
+END main
+```
+
+**assembler nasm linux 64**
+```asm
+section .rodata
+    msg db "Hello World", 0xA       ; String to print
+    len equ $- msg                  ; Length of string
+
+section	.text
+    global _start                   ; Specify entry point to linker
+
+_start:
+	mov	eax, 1                      ; System call ID (sys_write)
+	mov	edi, eax                    ; File descriptor (stdout)
+	mov	esi, msg                    ; Text to print
+    mov edx, len                    ; Length of text to print
+	syscall                         ; Call kernel
+
+    mov eax, 60                     ; System call ID (sys_exit)
+	xor	edi, edi                    ; Error code (EXIT_SUCCESS)
+	syscall                         ; Call kernel
+```
