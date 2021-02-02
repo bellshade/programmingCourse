@@ -18,7 +18,9 @@
 - [Write great code understanding the machine](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Assembly/Write%20Great%20Code%20Understanding%20the%20Machine%2C%20Volume%20I.chm)
 
 ## hello world!
+
 **assembler mips**
+
 ```asm
 .data
     hw:        .asciiz        "Hello, World!"
@@ -32,6 +34,7 @@ main:
 ```
 
 **assembler masm win64**
+
 ```asm
 GetStdHandle PROTO
 ExitProcess PROTO
@@ -62,6 +65,7 @@ END
 ```
 
 **assembler masm win32**
+
 ```asm
 .386
 .model flat,stdcall
@@ -79,7 +83,7 @@ bytesWritten DWORD ?
 main PROC
     push -11                 ; nStdHandle (STD_OUTPUT_HANDLE)
     call GetStdHandle@4
- 
+
     push 0                   ; lpReserved
     push OFFSET bytesWritten ; lpNumberOfCharsWritten
     push LENGTHOF msg - 1    ; nNumberOfCharsToWrite
@@ -94,6 +98,7 @@ END main
 ```
 
 **assembler nasm linux**
+
 ```asm
 .386
 .model flat,stdcall
@@ -111,7 +116,7 @@ bytesWritten DWORD ?
 main PROC
     push -11                 ; nStdHandle (STD_OUTPUT_HANDLE)
     call GetStdHandle@4
- 
+
     push 0                   ; lpReserved
     push OFFSET bytesWritten ; lpNumberOfCharsWritten
     push LENGTHOF msg - 1    ; nNumberOfCharsToWrite
@@ -126,6 +131,7 @@ END main
 ```
 
 **assembler nasm linux 64**
+
 ```asm
 section .rodata
     msg db "Hello World", 0xA       ; String to print
