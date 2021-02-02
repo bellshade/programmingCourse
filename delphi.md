@@ -17,3 +17,23 @@
 
 - [Mastering delphi 5 chapter 22: grapich in delphi](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi%205/Delphi%205%20-%20Mastering%20Delphi%205%20-%20Chapter%2022%20-%20Graphics.pdf)
 - [Object pascal guide](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Delphi/Delphi%205/Delphi%205%20-%20Object%20Pascal%20Language%20Guide.pdf)
+
+
+## hello world!
+```pas
+program HelloWorld;
+{$APPTYPE CONSOLE}
+
+begin
+	WriteLn('Hello World');
+end.
+```
+```delphi
+Program Hello_World;
+
+($APPTYPE CONSOLE)
+
+Begin
+  WriteLn('Hello World');
+End.
+```
