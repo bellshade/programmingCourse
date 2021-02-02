@@ -18,3 +18,14 @@
 - [visual c++ in any 12 lesson (zip file)](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/C%2B%2B/Visual%20C%2B%2B%20in%2012%20Easy%20Lessons.zip)
 - [thinking in c++ vol 1](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/C%2B%2B/Thinking%20In%20C%2B%2B%20-%202nd%20Ed.%20-%20Vol%201.pdf)
 - [thinking in c++ vol 2](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/C%2B%2B/Thinking%20in%20C%2B%2B%20Second%20Edition%20vol%202.pdf)
+
+## hello world!
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+  cout<<"hello world";
+  return 0;
+}
+```
