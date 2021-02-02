@@ -16,3 +16,4 @@ Computer programming is the process of designing and building an executable comp
 [![C++](https://img.shields.io/badge/C++_programming-8c7ae6?style=for-the-badge&logo=C%2B%2B&logoColor=white)](./cppList.md)
 [![csharp](https://img.shields.io/badge/C_sharp-192a56?style=for-the-badge&logo=C-sharp&logoColor=white)](./C_sharp.md)
 [![delphi](https://img.shields.io/badge/delphi-0097e6?style=for-the-badge&logo=delphi&logoColor=white)](./delphi.md)
+[![fortran](https://img.shields.io/badge/fortran-dcdde1?style=for-the-badge&logo=Fortran&logoColor=black)](./fortran.md)
