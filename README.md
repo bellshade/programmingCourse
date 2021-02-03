@@ -22,7 +22,7 @@ Computer programming is the process of designing and building an executable comp
 [![java](https://img.shields.io/badge/java-ff9f43?style=for-the-badge&logo=java&logoColor=white)](./java.md)
 [![javascript](https://img.shields.io/badge/javascript-ee5253?style=for-the-badge&logo=javascript&logoColor=white)](./javascript.md)
 [![kotlin](https://img.shields.io/badge/kotlin-0abde3?style=for-the-badge&logo=kotlin&logoColor=white)](./kotlin.md)
-[![lisp]()](https://img.shields.io/badge/lisp_programming-10ac84?style=for-the-badge&logo=Lisp&logoColor=white./lisp.md)
+[![lisp](https://img.shields.io/badge/lisp_programming-10ac84?style=for-the-badge&logo=Lisp&logoColor=white)](./lisp.md)
 [![lua](https://img.shields.io/badge/lua-01a3a4?style=for-the-badge&logo=lua&logoColor=white)](./lua.md)
 [![matlab](https://img.shields.io/badge/matlab-2e86de?style=for-the-badge&logo=Matlab&logoColor=white)](./matlab.md)
 [![ocaml](https://img.shields.io/badge/ocaml-341f97?style=for-the-badge&logo=ocaml&logoColor=white)](./ocaml.md)
