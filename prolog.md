@@ -8,6 +8,7 @@
 - [The art of prolog](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Prolog/Short%20Prolog%20Intro.pdf)
 
 ## hello world!
+
 ```pro
 helloWorld :-
   write('Hello World').
