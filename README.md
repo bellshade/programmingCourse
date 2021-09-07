@@ -6,7 +6,7 @@
 
 Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding).
 
-## list porgramming language
+## list programming language
 
 [![assembly](https://img.shields.io/badge/Assembly-0097e6?style=for-the-badge&logo=assembly&logoColor=white)](./assembly.md)
 [![C](https://img.shields.io/badge/C_programming-e1b12c?style=for-the-badge&logo=C&logoColor=white)](./C.md)
