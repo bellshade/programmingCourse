@@ -12,7 +12,7 @@
 - [O'reilly - javascript & DHTML cookbook](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/JavaScript/O%27Reilly%20JavaScript%20%26%20DHTML%20Cookbook%20%282nd%20Edition%29.pdf)
 - [O'reilly - javascript the good parts](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/JavaScript/OReilly.JavaScript.The.Good.Parts.May.2008.chm)
 - [javascript 100 power solution](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/JavaScript/Plug-In%20JavaScript%20100%20Power%20Solutions.pdf)
-
+- [JavaScript Notes for Professionals](https://goalkicker.com/JavaScriptBook/JavaScriptNotesForProfessionals.pdf)
 ## hello world!
 
 ```js
