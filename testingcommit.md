@@ -1,5 +1,3 @@
 testing
 
 testing2commitmessage
-
-
