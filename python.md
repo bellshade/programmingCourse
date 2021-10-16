@@ -20,6 +20,7 @@
 - [GUI programming with python](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Python/GUI%20Programming%20with%20Python%20-%20QT%20Edition%20%282002%29.chm)
 - [Getting started with pyparsing](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Python/Getting%20Started%20with%20Pyparsing%20%282007%29.pdf)
 - [Gray hat python - python programming for hacker and reverse engineers](https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Python/Gray%20Hat%20Python%20-%20Python%20Programming%20for%20Hackers%20and%20Reverse%20Engineers%20%282009%29.pdf)
+- [Numerical Methods in Engineering With Python 3, Third Edition - Jaan Kiusalaas](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxtZXRvZG9zbnVtZXJpY29zMjAxNDJ8Z3g6NmQwYWFlMzIwZjk5MmU4NQ)
 
 ## hello world!
 
