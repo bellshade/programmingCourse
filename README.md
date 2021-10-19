@@ -1,5 +1,6 @@
 # programming course ebook
 
+![discord](https://img.shields.io/discord/722002048643497994?style=for-the-badge)
 ![license](https://img.shields.io/github/license/bellshade/programmingCourse?style=for-the-badge)
 [![open issue](https://img.shields.io/github/issues/bellshade/programmingCourse?style=for-the-badge)](https://github.com/bellshade/programmingCourse/issues)
 ![prettier markdown](https://img.shields.io/github/workflow/status/bellshade/programmingCourse/prettier%20markdown?label=prettier%20markdown&style=for-the-badge)
