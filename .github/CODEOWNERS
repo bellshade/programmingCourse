@@ -7,4 +7,4 @@
 # review when someone opens a pull request.
 *       @slowy07 @nomadkode
 
-.github/auto-approve.yml
+.github/auto-approve.yml @googleapis/github-automation/
