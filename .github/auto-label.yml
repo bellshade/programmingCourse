@@ -1,1 +1,8 @@
 product: false
+
+path:
+  pullrequest: true
+  labelprefix: 'bot: '
+  packages:
+    auto-label: 'auto-label'
+    merge-on-green: 'merge-on-green'
