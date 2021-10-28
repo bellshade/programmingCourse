@@ -9,6 +9,10 @@ on:
       - review_requested
       - synchronize
       - unlabeled
+      - enhancement
+      - fix
+      - add
+      - documentation
   pull_request_review:
     types:
       - dismissed
