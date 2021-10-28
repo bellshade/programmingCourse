@@ -2,7 +2,7 @@ product: false
 
 path:
   pullrequest: true
-  labelprefix: 'bot: '
+  labelprefix: "bot: "
   packages:
-    auto-label: 'auto-label'
-    merge-on-green: 'merge-on-green'
+    auto-label: "auto-label"
+    merge-on-green: "merge-on-green"
