@@ -1,21 +1,24 @@
 pull_request_rules:
-  - name: automatic merge for main when reviewed and CI passes
+  - name: ci testing kalo sukses ke squash dengan label
     conditions:
       - check-success=prettier
       - base=main
       - label=ready-to-merge
-      - "title~=^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\))?:"
     actions:
-      post_check:
-        title: |
-          {% if check_succeed %}
-          Title follows Conventional Commit
-          {% else %}
-          Title does not follow Conventional Commit
-          {% endif %}
-        summary: |
-          {% if not check_succeed %}
-          Your pull request title must follow [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
-          {% endif %}
       merge:
         method: squash
+  - name: python label
+    conditions:
+      - files~=\.py$
+    actions:
+      label:
+        add:
+          - python files
+  - name: markdown label
+    conditions:
+      - files~=\.md$
+    actions:
+      label:
+        add:
+          - markdown files
+          
