@@ -21,4 +21,3 @@ pull_request_rules:
       label:
         add:
           - markdown files
-          
