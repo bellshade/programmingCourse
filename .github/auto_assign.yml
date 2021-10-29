@@ -1,0 +1,8 @@
+addReviewers: true
+
+addAssignees: true
+
+reviewers:
+  - nomadkode
+
+numberOfReviewers: 0
