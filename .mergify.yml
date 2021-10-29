@@ -1,12 +1,13 @@
 pull_request_rules:
-  - name: Merge dengan label
+  - name: automatic merge for main when reviewed and CI passes
     conditions:
       - check-success=prettier
       - base=main
       - label=ready-to-merge
     actions:
       merge:
-        method: squash
+        method: merge
+        
   - name: Conventional Commit
     conditions:
       - "title~=^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\))?:"
@@ -14,11 +15,11 @@ pull_request_rules:
       post_check:
         title: |
           {% if check_succeed %}
-          Title mengikuti conventional commit
+          Title follows Conventional Commit
           {% else %}
-          Title tidak mengikuti conventional commit
+          Title does not follow Conventional Commit
           {% endif %}
         summary: |
           {% if not check_succeed %}
-          Pull request title harus mengikuti [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
+          Your pull request title must follow [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
           {% endif %}
