@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: Merge dengan label
+    conditions:
+      - "#approved-reviews-by>=1"
+      - base=main
+      - label=ready-to-merge
+    actions:
+      merge:
+        method: squash
