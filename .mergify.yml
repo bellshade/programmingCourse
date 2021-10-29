@@ -9,7 +9,7 @@ pull_request_rules:
         method: squash
   - name: Conventional Commit
     conditions:
-      - "title~=^(fix:|feat:|docs:|style:|refactor:|perf:|test:|build:|ci:|chore:|revert:)(?:\\(.+\\))?:"
+      - "title~=^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\))?:"
     actions:
       post_check:
         title: |
