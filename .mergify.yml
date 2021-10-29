@@ -1,6 +1,7 @@
 pull_request_rules:
   - name: Merge dengan label
     conditions:
+      - check-success=prettier markdown / prettier (pull_request)
       - base=main
       - label=ready-to-merge
     actions:
