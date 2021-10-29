@@ -22,4 +22,3 @@ pull_request_rules:
           {% if not check_succeed %}
           Pull request title harus mengikuti [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
           {% endif %}
-    
