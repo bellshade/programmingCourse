@@ -4,7 +4,7 @@ pull_request_rules:
       - check-success=prettier
       - base=main
       - label=ready-to-merge
-- name: Conventional Commit
+  - name: Conventional Commit
     conditions:
       - "title~=^(fix:|feat:|docs:|style:|refactor:|perf:|test:|build:|ci:|chore:|revert:)(?:\\(.+\\))?:"
     actions:
