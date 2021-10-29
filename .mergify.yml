@@ -2,6 +2,7 @@ pull_request_rules:
   - name: Merge dengan label
     conditions:
       - check-success=prettier
+      - body~=(?m)^\[X\] saya sudah membaca (i have read) CONTRIBUTING dan sudah menyetujui semua
       - base=main
       - label=ready-to-merge
     actions:
