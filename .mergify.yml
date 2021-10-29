@@ -7,7 +7,7 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-        
+
   - name: Conventional Commit
     conditions:
       - "title~=^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\))?:"
